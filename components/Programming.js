@@ -11,7 +11,6 @@ const Programming = () => {
         <p className="ml-3"> C </p>
       </div>
       <div className="flex skillbg justify-start items-center p-2 text-small_text mx-3 h-10 bg-small_bg shadow-lg rounded">
-        <Image src={cPlus} alt="c programming" className="w-6" />
         <p className="ml-3"> C++ </p>
       </div>
       <div className="flex skillbg justify-start items-center p-2 text-small_text h-10 bg-small_bg shadow-lg rounded">
