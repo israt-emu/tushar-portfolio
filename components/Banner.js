@@ -3,7 +3,11 @@ import Link from "next/link";
 import myImage from "../assets/images/undraw_dev_focus_re_6iwt.svg";
 import {BsFacebook, BsLinkedin, BsGithub} from "react-icons/bs";
 import {motion} from "framer-motion";
+import {Roboto_Mono} from "@next/font/google"
 
+const roboto_Mono = Roboto_Mono({ subsets: ['latin'] });
+
+console.log(roboto_Mono);
 const Banner = () => {
   const banner = {
     animate: {
@@ -26,7 +30,7 @@ const Banner = () => {
         className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left mt-8 lg:mt-0"
       >
         <p className="text-title">Hi, my name is</p>
-        <h1 className="text-5xl font-bold leading-none sm:text-6xl text-title">Israt Jahan</h1>
+        <h1 style={roboto_Mono.style} className="text-5xl font-bold leading-none sm:text-6xl text-title">Israt Jahan</h1>
         <p className="mt-6 mb-2 text-lg text-small_text flex justify-center">
           Particularly I’m interested in learning and staying <br className="hidden lg:flex" /> current about programming and technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
