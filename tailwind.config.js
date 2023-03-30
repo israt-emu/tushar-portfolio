@@ -12,7 +12,6 @@ module.exports = {
         title: "var(--title-color)",
         small_text: "var(--small-text-color)",
         small_bg: "var(--small-bg-color)",
-        reddis: "var(--reddish-color)",
       },
       fontFamily: {
         nunito: ["var(--font-nunito)", ...fontFamily.sans],
