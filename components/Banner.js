@@ -34,18 +34,18 @@ const Banner = () => {
           <span className="text-reddis">.</span> Tushar <span className="text-secondary">Λ</span>
           <span className="text-primary">=</span> Imran.
         </h1>
-        <p className="mt-6 mb-2 text-lg text-small_text flex justify-center">
+        <div className="mt-6 mb-2 text-lg text-small_text flex justify-center">
           Particularly I’m interested in learning and staying <br className="hidden lg:flex" /> current about programming and technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
-        </p>
-        <p className="flex items-center">
-          <p className="mb-3 text-small_text">
+        </div>
+        <div className="flex items-center">
+          <div className="mb-3 text-small_text">
             <span className="text-xl text-secondary">2.5 </span> years of Experience
-          </p>
-          <p className="mb-3 text-small_text ml-3">
+          </div>
+          <div className="mb-3 text-small_text ml-3">
             <span className="text-xl text-reddis">16 </span> projects
-          </p>
-        </p>
+          </div>
+        </div>
 
         <div className="flex items-center mb-4 text-small_text ">
           <Link href="https://www.facebook.com/profile.php?id=100024239881205">
