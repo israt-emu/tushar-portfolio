@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="text-small_text">Send me an Email at</div>
         <div className="flex items-center text-small_text">
           <MdEmail className="text-2xl mr-2 text-primary" />
-          <div>isratjahan.em1998@gmail.com</div>
+          <div>tusar.imrnan.dev@gmail.com</div>
         </div>
         <div className="text-small_text mt-2">Have a Good Day!</div>
       </div>

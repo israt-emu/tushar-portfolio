@@ -32,8 +32,8 @@ const Education = () => {
             <Image src={sa_logo} alt="" className="w-20 mr-3" />
             <div>
               <h1 className="text-xl text-title">Higher Secondary School Certificate</h1>
-              <p className="text-sm text-small_text">Chowmuhoni Govt. S.A. College | April 2015-June 2017</p>
-              <Link href="https://www.cgsacollege.edu.bd/">
+              <p className="text-sm text-small_text">Rajbari Govt. College | April 2014-June 2016</p>
+              <Link href="https://rajbarigovtcollege.edu.bd/">
                 <BiLinkExternal className="text-small_text text-lg mt-2" />
               </Link>
             </div>
