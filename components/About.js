@@ -42,7 +42,7 @@ const About = () => {
         className="flex items-center mt-12 sm:mt-8 lg:mt-0 lg:w-2/5 relative "
       >
         <div className=""></div>
-        <Image src={myImage} alt="" className="w-[380px] rounded " />
+        <Image width={300} src={myImage} alt="" className="w-[380px] rounded " />
       </motion.div>
       <div className="flex flex-col justify-center rounded-sm lg:text-left lg:w-3/5 sm:px-6 lg:px-0 mt-6 lg:mt-0">
         <motion.div
@@ -56,7 +56,7 @@ const About = () => {
           }}
           className="flex items-center"
         >
-          <Image src={about} alt="" className="w-8 mr-2" />
+          <Image width={300} src={about} alt="" className="w-8 mr-2" />
           <h1 className="text-3xl font-semibold leading-none text-title ml-3">
             About Me
           </h1>

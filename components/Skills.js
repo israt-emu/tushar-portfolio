@@ -134,7 +134,7 @@ const Skills = () => {
     >
       <div className="flex items-center mb-6">
         <Image src={skills} alt="" className="w-12 mr-3" />
-        <h2 className="text-2xl font-bold sm:text-4xl text-title text-center">
+        <h2 className=" text-lg md:text-2xl font-bold sm:text-4xl text-title text-center">
           Skills That I have
         </h2>
       </div>
@@ -143,7 +143,7 @@ const Skills = () => {
         // whileInView="visible"
         // initial="hidden"
         // viewport={{ once: true, amount: 0.1 }}
-        className="grid grid-cols-6 gap-10 md:py-8"
+        className="grid grid-cols-3 md:grid-cols-6 gap-10 md:py-8"
       >
         {data?.map((d, i) => (
           <motion.div
