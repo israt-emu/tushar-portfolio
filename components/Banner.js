@@ -94,11 +94,11 @@ const Banner = () => {
           className="flex items-center"
         >
           <div className="mb-3 text-small_text">
-            <span className="text-xl text-secondary">2.5 </span> years of
+            <span className="text-xl text-secondary">1.5 </span> years of
             Experience
           </div>
           <div className="mb-3 text-small_text ml-3">
-            <span className="text-xl text-reddis">16 </span> projects
+            <span className="text-xl text-reddis">10 </span> projects
           </div>
         </motion.div>
 

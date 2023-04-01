@@ -73,7 +73,7 @@ const About = () => {
           }}
           className="mt-6 mb-4 text-md sm:mb-8 text-small_text"
         >
-          Hello! My name is Israt Jahan Emu. Currently, I’m taking part in a
+          Hello! My name is Tushar Imran. Currently, I’m taking part in a
           master’s degree program at Noakhali Science & Technology University in{" "}
           <span className="text-primary font-medium">Applied Mathematics</span>.
           <br className="hidden lg:flex" />

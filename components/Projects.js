@@ -3,8 +3,8 @@ import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import library from "../assets/images/library.png";
-import travel from "../assets/images/tour.png";
-import lipstick from "../assets/images/lipstick.png";
+import travel from "../assets/images/2.png";
+import watch from "../assets/images/1.png";
 import happyMom from "../assets/images/hapy-mom-main.png";
 import projects from "../assets/images/projects.png";
 import { motion } from "framer-motion";
@@ -120,13 +120,13 @@ const Projects = () => {
               }}
               className="flex items-center  text-small_text mt-3"
             >
-              <Link href="https://github.com/israt-emu">
+              <Link href="https://github.com/israt-emu/Library-management-frontend">
                 <BsGithub className="text-lg mr-3" title="Frontend Code" />
               </Link>
-              <Link href="https://github.com/israt-emu">
+              <Link href="https://github.com/israt-emu/Library-management-backend">
                 <BsGithub className="text-lg mr-3" title="Backend Code" />
               </Link>
-              <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+              <Link href="https://amathlib.netlify.app/">
                 <BiLinkExternal className="text-lg" title="Live Site" />
               </Link>
             </motion.div>
@@ -153,7 +153,7 @@ const Projects = () => {
           className="flex justify-center items-center bg-gray-600/25 ring-1 ring-gray-700 rounded-2xl  backdrop-blur-lg p-5 col-span-5 md:col-span-3"
         >
           <Image
-            src={library}
+            src={watch}
             alt=""
             className=" mb-4 lg:mb-0 border border-gray-700 rounded-xl"
           />
@@ -252,7 +252,7 @@ const Projects = () => {
           className="flex justify-center items-center bg-gray-600/25 ring-1 ring-gray-700 rounded-2xl  backdrop-blur-lg p-5 col-span-5 md:col-span-3"
         >
           <Image
-            src={library}
+            src={travel}
             alt=""
             className=" mb-4 lg:mb-0 border border-gray-700 rounded-xl"
           />
