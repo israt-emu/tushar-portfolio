@@ -22,7 +22,7 @@ const Projects = () => {
     },
   };
   return (
-    <div className="md:w-9/12 mx-auto py-8">
+    <div id="project" className="md:w-9/12 mx-auto py-8">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"

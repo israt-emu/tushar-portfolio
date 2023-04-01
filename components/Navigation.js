@@ -45,7 +45,8 @@ const Navigation = () => {
           }}
           className="flex items-center"
         >
-          <Image src={logo} alt="logo" className="w-24" />
+          {/* <Image src={logo} alt="logo" className="w-24" /> */}
+          <h1 className="text-3xl text-primary">Tushar</h1>
         </motion.div>
         <motion.ul initial="hidden" animate="show" variants={nav} className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md">
           <motion.li
@@ -59,27 +60,27 @@ const Navigation = () => {
             variants={item}
             className="flex items-center"
           >
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <a rel="noopener noreferrer" href="#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               About
             </a>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <a rel="noopener noreferrer" href="#experience" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Experience
             </a>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <a rel="noopener noreferrer" href="#project" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Project
             </a>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <a rel="noopener noreferrer" href="#education" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Education
             </a>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <a rel="noopener noreferrer" href="#contact" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Contact
             </a>
           </motion.li>

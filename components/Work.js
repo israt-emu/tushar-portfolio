@@ -20,6 +20,8 @@ const Work = () => {
   };
   return (
     <motion.div
+
+    id="experience"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.1 }}

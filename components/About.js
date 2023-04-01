@@ -24,6 +24,7 @@ const About = () => {
   };
   return (
     <motion.div
+    id="about"
       className="sm:w-10/12 xs:w-full flex flex-col justify-center px-6 mx-auto sm:pt-14 pb-10 md:my-20 lg:flex-row  lg:items-center items-start bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm"
       initial="offscreen"
       whileInView="onscreen"

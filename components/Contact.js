@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.div
+    id="contact"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true ,amount:.1}}

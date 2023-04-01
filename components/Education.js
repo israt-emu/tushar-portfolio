@@ -1,6 +1,6 @@
 import Image from "next/image";
 import nstu_logo from "../assets/images/nstu.png";
-import sa_logo from "../assets/images/sa.jpg";
+import sa_logo from "../assets/images/rajbari-govt.jpeg";
 import nstu from "../assets/images/fountain_pen.jpg";
 import sa from "../assets/images/sa-image.jpg";
 import { BiLinkExternal } from "react-icons/bi";
@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 const Education = () => {
   return (
     <motion.div
+    id="education"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}

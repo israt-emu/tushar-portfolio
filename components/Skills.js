@@ -126,6 +126,7 @@ const Skills = () => {
   
   return (
     <motion.div
+    id="skill"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.1 }}
