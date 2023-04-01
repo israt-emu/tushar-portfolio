@@ -4,6 +4,7 @@ import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { Roboto_Mono } from "@next/font/google";
 import myImage from "../assets/images/banner.svg";
+import { Typewriter } from "react-simple-typewriter";
 
 const roboto_Mono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -36,12 +37,37 @@ const Banner = () => {
           style={roboto_Mono.style}
           className="text-2xl font-semibold leading-none sm:text-5xl text-title"
         >
-          <span className="text-secondary"> ⟹</span> Hey, This is{" "}
+          <span className="text-secondary">
+            {" "}
+            <Typewriter loop={1} words={["⟹"]} />{" "}
+          </span>{" "}
+          <Typewriter
+            loop={Infinity}
+            words={["Hey, This is "]}
+            delaySpeed={1000}
+            typeSpeed={80}
+            deleteSpeed={80}
+          />
           <span className="text-reddis">===</span>{" "}
           <span className="text-primary">*</span>
-          <span className="text-reddis">.</span> Tushar{" "}
-          <span className="text-secondary">Λ</span>
-          <span className="text-primary">=</span> Imran.
+          <span className="text-reddis">.</span>{" "}
+          <Typewriter
+            loop={Infinity}
+            words={["Tushar"]}
+            delaySpeed={2500}
+            typeSpeed={80}
+            deleteSpeed={70}
+          />
+          <span className="text-secondary"> Λ</span>
+          <span className="text-primary">=</span>{" "}
+          <Typewriter
+            loop={Infinity}
+            words={["Imran"]}
+            delaySpeed={3500}
+            cursor={true}
+            deleteSpeed={60}
+            typeSpeed={80}
+          />
         </h1>
         <div className="mt-6 mb-2 text-lg text-small_text flex justify-center">
           Particularly I’m interested in learning and staying{" "}

@@ -1,13 +1,115 @@
 import Image from "next/image";
-import {useState} from "react";
+import { useState } from "react";
 import Backend from "./Backend";
 import Design from "./Design";
 import Frontend from "./Frontend";
 import Programming from "./Programming";
 import Tools from "./Tools";
 import skills from "../assets/images/skills.png";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+
+import JS from "../assets/images/Javascript-JS.png";
+import HTML from "../assets/images/html.png";
+import CSS from "../assets/images/css.png";
+import react from "../assets/images/react.png";
+import redux from "../assets/images/redux.png";
+import bootstrap from "../assets/images/bootstrap.png";
+import tailwind from "../assets/images/tailwind.png";
+import material from "../assets/images/material.png";
+import node from "../assets/images/node.png";
+import express from "../assets/images/express.jpg";
+import mongodb from "../assets/images/mongodb.png";
+import jwtToken from "../assets/images/jwt.png";
+import netlify from "../assets/images/netlify.png";
+import firebase from "../assets/images/firebase.png";
+
 const Skills = () => {
+  const data = [
+    {
+      id: 1,
+      image: JS,
+      title: "Javascript",
+      description: "JS Programming",
+    },
+    {
+      id: 2,
+      image: HTML,
+      title: "HTML",
+      description: "C Programming",
+    },
+    {
+      id: 3,
+      image: CSS,
+      title: "CSS",
+      description: "C Programming",
+    },
+    {
+      id: 4,
+      image: react,
+      title: "React",
+      description: "C Programming",
+    },
+    {
+      id: 5,
+      image: redux,
+      title: "redux",
+      description: "C Programming",
+    },
+    {
+      id: 6,
+      image: bootstrap,
+      title: "Bootstrap",
+      description: "C Programming",
+    },
+    {
+      id: 7,
+      image: tailwind,
+      title: "Tailwind",
+      description: "C Programming",
+    },
+    {
+      id: 8,
+      image: material,
+      title: "Material Ui",
+      description: "C Programming",
+    },
+    {
+      id: 9,
+      image: node,
+      title: "Node Js",
+      description: "C Programming",
+    },
+    {
+      id: 10,
+      image: express,
+      title: "Express",
+      description: "C Programming",
+    },
+    {
+      id: 11,
+      image: mongodb,
+      title: "Mongodb",
+      description: "C Programming",
+    },
+    {
+      id: 12,
+      image: jwtToken,
+      title: "Jwt Token",
+      description: "C Programming",
+    },
+    {
+      id: 13,
+      image: netlify,
+      title: "Netlify",
+      description: "C Programming",
+    },
+    {
+      id: 14,
+      image: firebase,
+      title: "Firebase",
+      description: "C Programming",
+    },
+  ];
   const [active, setActive] = useState("programming");
   const skillVariants = {
     offscreen: {
@@ -22,36 +124,29 @@ const Skills = () => {
     },
   };
   return (
-    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="mx-auto w-full lg:w-9/12 py-8 lg:px-6">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={skillVariants}
+      className="mx-auto w-full lg:w-9/12 py-8 lg:px-6"
+    >
       <div className="flex items-center mb-6">
         <Image src={skills} alt="" className="w-12 mr-3" />
-        <h2 className="text-2xl font-bold sm:text-4xl text-title text-center">Skills That I have</h2>
+        <h2 className="text-2xl font-bold sm:text-4xl text-title text-center">
+          Skills That I have
+        </h2>
       </div>
-      <div className="grid grid-cols-5 gap-10 md:py-8">
-        <div className="flex col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
-          <button className={`p-2 w-32 text-left border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${active === "programming" ? "border-primary text-primary skillbg" : "border-gray-500 text-gray-400"} hover:text-primary hover:bg-small_bg font-medium`} onClick={() => setActive("programming")}>
-            Programming
-          </button>
-          <button className={`p-2 text-left w-32 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${active === "frontend" ? "border-primary text-primary skillbg" : "border-gray-500 text-gray-400"} hover:text-primary hover:bg-small_bg font-medium`} onClick={() => setActive("frontend")}>
-            Frontend
-          </button>
-          <button className={`p-2 text-left w-32 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${active === "backend" ? "border-primary text-primary skillbg" : "border-gray-500 text-gray-400"} hover:text-primary hover:bg-small_bg font-medium`} onClick={() => setActive("backend")}>
-            Backend
-          </button>
-          <button className={`p-2  text-left w-32 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${active === "tools" ? "border-primary text-primary skillbg" : "border-gray-500 text-gray-400"} hover:text-primary hover:bg-small_bg font-medium`} onClick={() => setActive("tools")}>
-            Tools
-          </button>
-          <button className={`p-2 text-left w-32 border-b-2 md:border-l-2 md:border-b-0 md:py-3 ${active === "design" ? "border-primary text-primary skillbg" : "border-gray-500 text-gray-400"} hover:text-primary hover:bg-small_bg font-medium`} onClick={() => setActive("design")}>
-            Design Tools
-          </button>
-        </div>
-        <div className="text-center  col-span-full md:col-span-4 md:text-left pt-4 sm:border-t-2 sm:border-slate-700">
-          {active === "programming" && <Programming />}
-          {active === "frontend" && <Frontend />}
-          {active === "backend" && <Backend />}
-          {active === "tools" && <Tools />}
-          {active === "design" && <Design />}
-        </div>
+      <div className="grid grid-cols-6 gap-10 md:py-8">
+        {data?.map((d) => (
+          <div
+            key={d?.id}
+            className="flex items-center  p-2 text-small_text h-10 shadow-lg rounded  justify-start w-full"
+          >
+            <Image src={d?.image} alt={d?.description} className="w-6" />
+            <p className="ml-2"> {d?.title} </p>
+          </div>
+        ))}
       </div>
     </motion.div>
   );
