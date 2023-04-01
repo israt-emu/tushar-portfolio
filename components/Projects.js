@@ -232,7 +232,7 @@ const Projects = () => {
           </div>
         </motion.div>
       </motion.div>
-      didiv
+      
     </div>
   );
 };

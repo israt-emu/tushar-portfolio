@@ -87,18 +87,48 @@ const About = () => {
           three professional websites with their team.
           <br className="hidden lg:flex " />I also love to____
           <div className="flex flex-col sm:flex-row sm:items-center mt-5">
-            <div className="flex items-center mr-3">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex items-center mr-3"
+            >
               <MdMovie className="text-lg mr-1 text-primary" />{" "}
               <div className="font-medium">Watch movie</div>
-            </div>
-            <div className="flex items-center mr-3">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex items-center mr-3"
+            >
               <FcReading className="text-lg mr-1" />
               <div className="font-medium">Read books</div>
-            </div>
-            <div className="flex items-center">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 1 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex items-center"
+            >
               <FaRunning className="text-lg mr-1 text-primary" />
               <div className="font-medium">Travel</div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
