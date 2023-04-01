@@ -110,7 +110,7 @@ const Skills = () => {
       description: "C Programming",
     },
   ];
-  const [active, setActive] = useState("programming");
+  
   const skillVariants = {
     offscreen: {
       y: 100,
@@ -123,6 +123,7 @@ const Skills = () => {
       },
     },
   };
+  
   return (
     <motion.div
       initial="offscreen"
@@ -137,17 +138,31 @@ const Skills = () => {
           Skills That I have
         </h2>
       </div>
-      <div className="grid grid-cols-6 gap-10 md:py-8">
-        {data?.map((d) => (
-          <div
+      <motion.div
+        // variants={boxVariant}
+        // whileInView="visible"
+        // initial="hidden"
+        // viewport={{ once: true, amount: 0.1 }}
+        className="grid grid-cols-6 gap-10 md:py-8"
+      >
+        {data?.map((d, i) => (
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: i * 0.1 }}
+            variants={{
+              visible: { opacity: 1, scale: 1, x: 0,y:0 },
+              hidden: { opacity: 0, scale: 0, x: 50,y:50 },
+            }}
             key={d?.id}
             className="flex items-center  p-2 text-small_text h-10 shadow-lg rounded  justify-start w-full"
           >
             <Image src={d?.image} alt={d?.description} className="w-6" />
             <p className="ml-2"> {d?.title} </p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

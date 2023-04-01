@@ -30,23 +30,49 @@ const About = () => {
       viewport={{ once: true, amount: 0.1 }}
       variants={aboutVariants}
     >
-      <div className="flex items-center mt-12 sm:mt-8 lg:mt-0 lg:w-2/5 relative ">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        variants={{
+          visible: { opacity: 1, x: 0 },
+          hidden: { opacity: 0, x: -100 },
+        }}
+        className="flex items-center mt-12 sm:mt-8 lg:mt-0 lg:w-2/5 relative "
+      >
         <div className=""></div>
-        <Image
-          src={myImage}
-          alt=""
-          className="w-[380px] rounded "
-        />
-      </div>
+        <Image src={myImage} alt="" className="w-[380px] rounded " />
+      </motion.div>
       <div className="flex flex-col justify-center rounded-sm lg:text-left lg:w-3/5 sm:px-6 lg:px-0 mt-6 lg:mt-0">
-        <div className="flex items-center">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: 100 },
+          }}
+          className="flex items-center"
+        >
           <Image src={about} alt="" className="w-8 mr-2" />
           <h1 className="text-3xl font-semibold leading-none text-title ml-3">
             About Me
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="mt-6 mb-4 text-md sm:mb-8 text-small_text">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+          className="mt-6 mb-4 text-md sm:mb-8 text-small_text"
+        >
           Hello! My name is Israt Jahan Emu. Currently, I’m taking part in a
           master’s degree program at Noakhali Science & Technology University in{" "}
           <span className="text-primary font-medium">Applied Mathematics</span>.
@@ -74,7 +100,7 @@ const About = () => {
               <div className="font-medium">Travel</div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

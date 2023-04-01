@@ -42,25 +42,65 @@ const Projects = () => {
         variants={projectVariants}
         className=" grid grid-cols-5 my-8 md:my-16  items-center"
       >
-        <div className="flex justify-center items-center bg-gray-600/25 ring-1 ring-gray-700 rounded-2xl  backdrop-blur-lg p-5 col-span-5 md:col-span-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+            hidden: { opacity: 0, scale: 0, x: 50, y: 50 },
+          }}
+          className="flex justify-center items-center bg-gray-600/25 ring-1 ring-gray-700 rounded-2xl  backdrop-blur-lg p-5 col-span-5 md:col-span-3"
+        >
           <Image
             src={library}
             alt=""
             className=" mb-4 lg:mb-0 border border-gray-700 rounded-xl"
           />
-        </div>
-        <div className="ml-4 col-span-5 md:col-span-2 my-3">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: 0.6 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+          className="ml-4 col-span-5 md:col-span-2 my-3"
+        >
           <h1 className="text-title text-2xl  font-semibold">
             Library Management Website
           </h1>
-          <div className="  text-small_text  mt-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.7 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 50 },
+            }}
+            className="  text-small_text  mt-4"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             distinctio harum perspiciatis libero facilis dolorum quisquam sed
             omnis, atque obcaecati animi qui sint sunt ipsam est eius doloremque
             expedita quas.
-          </div>
+          </motion.div>
           <div className="flex flex-col  py-4 ">
-            <div className="flex flex-wrap items-center text-primary text-sm font-semibold  ">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.8 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex flex-wrap items-center text-primary text-sm font-semibold  "
+            >
               <span className="mr-3">React</span>
               <span className="mr-3">JWT</span>
               <span className="mr-3">Redux</span>
@@ -68,8 +108,18 @@ const Projects = () => {
               <span className="mr-3">Node</span>
               <span className="mr-3">Express</span>
               <span>MongoDB</span>
-            </div>
-            <div className="flex items-center  text-small_text mt-3">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.9 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex items-center  text-small_text mt-3"
+            >
               <Link href="https://github.com/israt-emu">
                 <BsGithub className="text-lg mr-3" title="Frontend Code" />
               </Link>
@@ -79,9 +129,9 @@ const Projects = () => {
               <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
                 <BiLinkExternal className="text-lg" title="Live Site" />
               </Link>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
       {/* //watch shop  */}
       <motion.div
@@ -91,25 +141,65 @@ const Projects = () => {
         variants={projectVariants}
         className=" grid grid-cols-5 my-8 md:my-16  items-center"
       >
-        <div className="flex justify-center items-center bg-gray-600/25 ring-1 ring-gray-700 rounded-2xl  backdrop-blur-lg p-5 col-span-5 md:col-span-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          variants={{
+            visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+            hidden: { opacity: 0, scale: 0, x: 50, y: 50 },
+          }}
+          className="flex justify-center items-center bg-gray-600/25 ring-1 ring-gray-700 rounded-2xl  backdrop-blur-lg p-5 col-span-5 md:col-span-3"
+        >
           <Image
             src={library}
             alt=""
             className=" mb-4 lg:mb-0 border border-gray-700 rounded-xl"
           />
-        </div>
-        <div className="ml-4 col-span-5 md:col-span-2 my-3">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: 0.6 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 50 },
+          }}
+          className="ml-4 col-span-5 md:col-span-2 my-3"
+        >
           <h1 className="text-title text-2xl  font-semibold">
             Library Management Website
           </h1>
-          <didiv className="  text-small_text  mt-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.7 }}
+            variants={{
+              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 50 },
+            }}
+            className="  text-small_text  mt-4"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             distinctio harum perspiciatis libero facilis dolorum quisquam sed
             omnis, atque obcaecati animi qui sint sunt ipsam est eius doloremque
             expedita quas.
-          </didiv>
+          </motion.div>
           <div className="flex flex-col  py-4 ">
-            <didiv className="flex flex-wrap items-center text-primary text-sm font-semibold  ">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.8 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex flex-wrap items-center text-primary text-sm font-semibold  "
+            >
               <span className="mr-3">React</span>
               <span className="mr-3">JWT</span>
               <span className="mr-3">Redux</span>
@@ -117,8 +207,18 @@ const Projects = () => {
               <span className="mr-3">Node</span>
               <span className="mr-3">Express</span>
               <span>MongoDB</span>
-            </didiv>
-            <div className="flex items-center  text-small_text mt-3">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.9 }}
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: 50 },
+              }}
+              className="flex items-center  text-small_text mt-3"
+            >
               <Link href="https://github.com/israt-emu">
                 <BsGithub className="text-lg mr-3" title="Frontend Code" />
               </Link>
@@ -128,10 +228,11 @@ const Projects = () => {
               <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
                 <BiLinkExternal className="text-lg" title="Live Site" />
               </Link>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      </motion.div>didiv
+        </motion.div>
+      </motion.div>
+      didiv
     </div>
   );
 };

@@ -20,7 +20,6 @@ const Banner = () => {
   };
   return (
     <motion.div
-      variants={banner}
       className="container flex flex-col-reverse justify-center md:p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen"
     >
       <motion.div
@@ -35,7 +34,7 @@ const Banner = () => {
       >
         <h1
           style={roboto_Mono.style}
-          className="text-2xl font-semibold leading-none sm:text-5xl text-title"
+          className="text-2xl font-semibold leading-none sm:text-5xl text-title h-[135px]"
         >
           <span className="text-secondary">
             {" "}
@@ -69,13 +68,31 @@ const Banner = () => {
             typeSpeed={80}
           />
         </h1>
-        <div className="mt-6 mb-2 text-lg text-small_text flex justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.5,
+          }}
+          className="mt-6 mb-2 text-lg text-small_text flex justify-center"
+        >
           Particularly I’m interested in learning and staying{" "}
           <br className="hidden lg:flex" /> current about programming and
           technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
-        </div>
-        <div className="flex items-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.6,
+          }}
+          className="flex items-center"
+        >
           <div className="mb-3 text-small_text">
             <span className="text-xl text-secondary">2.5 </span> years of
             Experience
@@ -83,9 +100,18 @@ const Banner = () => {
           <div className="mb-3 text-small_text ml-3">
             <span className="text-xl text-reddis">16 </span> projects
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex items-center mb-4 text-small_text ">
+        <motion.div
+          initial={{ opacity: 0, x: -180 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.7,
+          }}
+          className="flex items-center mb-4 text-small_text "
+        >
           <Link href="https://www.facebook.com/profile.php?id=100024239881205">
             <BsFacebook className="w-8 mr-2" />
           </Link>
@@ -95,15 +121,21 @@ const Banner = () => {
           <Link href="https://github.com/israt-emu">
             <BsGithub className="w-8 mr-3" />
           </Link>
-        </div>
-        <div className="items-center flex-shrink-0 lg:flex">
+        </motion.div>
+        <motion.div   initial={{ opacity: 0, y: -80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.5,
+          }} className="items-center flex-shrink-0 lg:flex">
           <button className="px-4 py-2 rounded border-2 border-primary text-primary ">
             Work
           </button>
           <button className="ml-3 px-4 py-2 rounded bg-primary border-2 border-primary text-white ">
             Resume
           </button>
-        </div>
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
