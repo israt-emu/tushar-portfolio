@@ -18,7 +18,7 @@ const Education = () => {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 150 },
       }}
-      className="sm:w-9/12 mx-auto py-16"
+      className="sm:w-9/12 mx-auto md:py-16"
     >
       <div className="flex items-center">
         <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4 mr-3">

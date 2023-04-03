@@ -3,7 +3,7 @@ import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="w-9/12 mx-auto pb-8 pt-24">
+    <div className="w-9/12 mx-auto pb-8 md:pt-24">
       <h1 className="text-small_text text-sm text-center">
         Built & Designed By --- Tusar Imran
       </h1>

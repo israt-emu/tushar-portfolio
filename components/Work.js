@@ -26,7 +26,7 @@ const Work = () => {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.1 }}
       variants={workVariants}
-      className="sm:w-4/5 lg:w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title container"
+      className="sm:w-4/5 lg:w-9/12 flex flex-col justify-center px-6 md:py-20 mx-auto text-title container"
     >
       <div className="flex items-center md:mb-4">
         <Image src={intern} alt="" className="w-14 mr-3" />
@@ -98,7 +98,7 @@ const Work = () => {
                 }}
                 className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-primary"
               >
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                   Worked with a team of three designers & two developer to build
                   a e-commerce website and a question bank website{" "}
                 </p>
@@ -114,7 +114,7 @@ const Work = () => {
                 }}
                 className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-primary"
               >
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                   Re-organized something to make it work better. Identified a
                   problem and solved it.
                 </p>
@@ -130,7 +130,7 @@ const Work = () => {
                 }}
                 className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-primary"
               >
-                <p className="mt-3">
+                <p className="mt-3 text-lg">
                   Come up with a new idea that improved things. Developed or
                   implemented new procedures or systems.
                 </p>

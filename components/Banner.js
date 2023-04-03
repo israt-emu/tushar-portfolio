@@ -19,9 +19,7 @@ const Banner = () => {
     },
   };
   return (
-    <motion.div
-      className="container flex flex-col-reverse justify-center md:p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen"
-    >
+    <motion.div className="container flex flex-col-reverse justify-center md:p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen">
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         animate={{ opacity: 1, y: 0 }}
@@ -33,40 +31,11 @@ const Banner = () => {
         className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left mt-8 lg:mt-0"
       >
         <h1
-          style={roboto_Mono.style}
-          className="text-2xl font-semibold leading-none sm:text-5xl text-title h-[135px]"
+          // style={roboto_Mono.style}
+          className="text-2xl leading-2 font-semibold  sm:text-5xl text-title "
         >
-          <span className="text-secondary">
-            {" "}
-            <Typewriter loop={1} words={["⟹"]} />{" "}
-          </span>{" "}
-          <Typewriter
-            loop={Infinity}
-            words={["Hey, This is "]}
-            delaySpeed={1000}
-            typeSpeed={80}
-            deleteSpeed={80}
-          />
-          <span className="text-reddis">===</span>{" "}
-          <span className="text-primary">*</span>
-          <span className="text-reddis">.</span>{" "}
-          <Typewriter
-            loop={Infinity}
-            words={["Tushar"]}
-            delaySpeed={2500}
-            typeSpeed={80}
-            deleteSpeed={70}
-          />
-          <span className="text-secondary"> Λ</span>
-          <span className="text-primary">=</span>{" "}
-          <Typewriter
-            loop={Infinity}
-            words={["Imran"]}
-            delaySpeed={3500}
-            cursor={true}
-            deleteSpeed={60}
-            typeSpeed={80}
-          />
+          <span className="text-secondary "> ⟹</span>{" "}
+          <span className="text-5xl leading-">Hey, This is Tushar</span> <br />
         </h1>
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -112,29 +81,40 @@ const Banner = () => {
           }}
           className="flex items-center mb-4 text-small_text "
         >
-          <Link href="https://www.facebook.com/profile.php?id=100024239881205">
+          <Link
+            target="_blank"
+            href="https://www.facebook.com/tushar.imran.357"
+          >
             <BsFacebook className="w-8 mr-2" />
           </Link>
-          <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/tusar-imran-680149227/"
+          >
             <BsLinkedin className="w-8 mr-2" />
           </Link>
-          <Link href="https://github.com/israt-emu">
+          <Link target="_blank" href="https://github.com/tushar8640">
             <BsGithub className="w-8 mr-3" />
           </Link>
         </motion.div>
-        <motion.div   initial={{ opacity: 0, y: -80 }}
+        <motion.div
+          initial={{ opacity: 0, y: -80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
             ease: "easeInOut",
             duration: 1,
             delay: 0.5,
-          }} className="items-center flex-shrink-0 lg:flex">
-          <button className="px-4 py-2 rounded border-2 border-primary text-primary ">
-            Work
-          </button>
-          <button className="ml-3 px-4 py-2 rounded bg-primary border-2 border-primary text-white ">
-            Resume
-          </button>
+          }}
+          className="items-center flex-shrink-0 lg:flex"
+        >
+          <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1xuZ76ws-5brlsAQahSzAO17MTX8heJXz/view?usp=share_link"
+          >
+            <button className="ml-2 px-4 py-2 rounded bg-primary border-2 border-primary text-white ">
+              Resume
+            </button>
+          </Link>
         </motion.div>
       </motion.div>
       <motion.div
@@ -148,7 +128,7 @@ const Banner = () => {
         className="flex items-center justify-center md:p-6 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
       >
         <Image
-        width={300}
+          width={300}
           src={myImage}
           alt=""
           className="object-contain lg:w-3/5 sm:w-4/5"

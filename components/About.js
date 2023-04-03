@@ -72,7 +72,7 @@ const About = () => {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 50 },
           }}
-          className="mt-6 mb-4 text-md sm:mb-8 text-small_text"
+          className="mt-6 mb-4 text-lg  sm:mb-8 text-small_text"
         >
           Hello! My name is Tushar Imran. Currently, I’m taking part in a
           master’s degree program at Noakhali Science & Technology University in{" "}
